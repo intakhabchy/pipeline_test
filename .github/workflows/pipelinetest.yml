@@ -15,6 +15,6 @@ jobs:
       - name: Git clone
         uses: actions/checkout@v2
       - name: Read the file
-        runs: |
+        run: |
           ls -l
           cat hello_world.txt
