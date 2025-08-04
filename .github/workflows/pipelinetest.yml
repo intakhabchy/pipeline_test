@@ -10,11 +10,10 @@ on:
 
 jobs:
   read_the_file:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Git clone
         uses: actions/checkout@v2
       - name: Read the file
         run: |
           ls -l
-          cat hello_world.txt
